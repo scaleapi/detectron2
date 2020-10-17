@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "detectron2"
+version = "0.2.2"
+description = "Detectron2 is FAIR's next-generation platform for object detection and segmentation."
+authors = ["Your Name <you@example.com>"]
+license = "Apache 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+termcolor = "^1.1"
+Pillow = "^7.1"
+yacs = "^0.1.6"
+tabulate = "^0.8.7"
+cloudpickle = "^1.6.0"
+matplotlib = "^3.3.2"
+tensorboard = "^2.2.2"
+future = "^0.18.2"
+pydot = "^1.4.1"
+Shapely = "^1.7.0"
+torch = "^1.4.0"
+panopticapi = { git = "https://github.com/cocodataset/panopticapi.git", rev = "118ffaba478b5d45925e88d504625b4123f3160a" }
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.1"
+isort = "^4.3.21"
+black = "^20.8b1"
+flake8-bugbear = "*"
+flake8-comprehensions = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

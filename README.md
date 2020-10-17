@@ -25,6 +25,23 @@ to see more demos and learn about detectron2.
 
 See [INSTALL.md](INSTALL.md).
 
+
+#### Development
+
+1. [Get poetry, a Python project manager](https://python-poetry.org/docs/#installation)
+2. Install the project with `poetry install`
+
+```shell
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+git clone git@github.com:malcolmgreaves/detectron2.git
+cd detectron2
+poetry install
+```
+
+You can execute `poetry shell` to enter into the project's environment and run code (similiar).
+Alternatively, you can use `poetry run ...` to execute commands from within the project's
+environment while you have not entered into it.
+
 ## Quick Start
 
 See [GETTING_STARTED.md](GETTING_STARTED.md),
