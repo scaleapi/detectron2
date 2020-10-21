@@ -12,6 +12,8 @@ from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 from torch.utils.hipify import hipify_python
 
 torch_ver = [int(x) for x in torch.__version__.split(".")[:2]]
+with open(os.path.join(os.environ['HOME'], 'TORCH_VER_INSTALL'), 'wt') as wt: 
+    wt.write(f"\n\ntorch version: {torch_ver}\n\n")
 assert torch_ver >= [1, 4], "Requires PyTorch >= 1.4"
 
 
